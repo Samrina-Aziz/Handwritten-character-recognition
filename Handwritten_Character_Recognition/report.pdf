@@ -1,0 +1,49 @@
+Intern Name: Samrina Aziz
+Internship: CodeAlpha Internship Program
+Task: Task 3 – Handwritten Character Recognition
+Date: February 2026
+1. Introduction
+Handwritten character recognition is a key application of deep learning, used in areas such as
+automated document processing, postal code reading, and bank cheque digitization. This project
+implements a Convolutional Neural Network (CNN) to recognize handwritten digits using the
+MNIST dataset, demonstrating efficient and accurate character recognition. 2. Objective
+The objective of this task is to identify handwritten characters or digits by applying image
+processing and deep learning techniques, specifically through a CNN architecture. 3. Dataset
+MNIST (Modified National Institute of Standards and Technology) dataset was utilized:
+Feature Description
+Total Images 70,000
+Training Set 60,000
+Testing Set 10,000
+Image Size 28 × 28 grayscale
+Classes 10 digits (0–9)
+The dataset was loaded using TensorFlow/Keras utilities and preprocessed for CNN input. 4. Methodology
+4.1Data Preprocessing
+4.2Normalized pixel values from 0–255 to 0–1
+
+ Reshaped images to fit CNN input format (28×28×1)
+4.2 Model Architecture
+The CNN model consists of:
+1. Convolutional Layer – Extracts features using ReLU activation
+2. MaxPooling Layer – Reduces spatial dimensions
+3. Flatten Layer – Converts 2D data into 1D vector
+4. Dense Layer – Fully connected layer for learning
+5. Output Layer – Softmax activation for classification
+4.3 Model Training
+ Optimizer: Adam
+ Loss Function: Sparse Categorical Crossentropy
+ Epochs: 5
+ Validation Data: Test set (10,000 images)
+5. Results
+Metric Value
+Training Accuracy 99.58%
+Validation Accuracy 99.05%
+Training Loss 0.0122
+Validation Loss 0.0293
+The model achieved high accuracy, confirming effective learning. Training curves show steady
+improvement across epochs. 6. Conclusion
+This task successfully demonstrates handwritten digit recognition using a CNN.
+ The model achieved high accuracy on MNIST digits.  The project can be extended to recognize alphabets using the EMNIST dataset or full
+words using CRNN models.  This task fulfills all objectives of Task 3: Handwritten Character Recognition under
+the CodeAlpha internship. 7. References
+ MNIST Dataset: http://yann.lecun.com/exdb/mnist/  TensorFlow Documentation: https://www.tensorflow.org/
+Keras Documentationhttps://keras.io/
